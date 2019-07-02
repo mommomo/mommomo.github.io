@@ -3,19 +3,32 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>猫猫🐱</title>
+  <title>2.缺陷报告及测试用例... | 猫猫🐱</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="猫猫🐱">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、 缺陷报告的组成1、缺陷编号(Defect  ID)提交bug的顺序2、缺陷标题(summary)简明扼要的说明一下该bug3、缺陷的发现者(Detected By)一般就是自己4、发现缺陷的日期(Detected on date)（区别：data数据）一般就是当天5、缺陷所属的模块(subject)在测试哪个模块的时候发现的bug；开发经理会据此找到bug的修改负责人 6、发现缺陷版本(De">
+<meta name="keywords" content="😫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2.缺陷报告及测试用例...">
+<meta property="og:url" content="http://yoursite.com/2019/07/02/测试用例/index.html">
 <meta property="og:site_name" content="猫猫🐱">
+<meta property="og:description" content="一、 缺陷报告的组成1、缺陷编号(Defect  ID)提交bug的顺序2、缺陷标题(summary)简明扼要的说明一下该bug3、缺陷的发现者(Detected By)一般就是自己4、发现缺陷的日期(Detected on date)（区别：data数据）一般就是当天5、缺陷所属的模块(subject)在测试哪个模块的时候发现的bug；开发经理会据此找到bug的修改负责人 6、发现缺陷版本(De">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057047589.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057266960.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057364110.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057631463.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057678047.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057751641.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057960489.png">
+<meta property="og:updated_time" content="2019-07-02T09:11:09.678Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="猫猫🐱">
+<meta name="twitter:title" content="2.缺陷报告及测试用例...">
+<meta name="twitter:description" content="一、 缺陷报告的组成1、缺陷编号(Defect  ID)提交bug的顺序2、缺陷标题(summary)简明扼要的说明一下该bug3、缺陷的发现者(Detected By)一般就是自己4、发现缺陷的日期(Detected on date)（区别：data数据）一般就是当天5、缺陷所属的模块(subject)在测试哪个模块的时候发现的bug；开发经理会据此找到bug的修改负责人 6、发现缺陷版本(De">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/02/测试用例/images/1562057047589.png">
   
     <link rel="alternative" href="/atom.xml" title="猫猫🐱" type="application/atom+xml">
   
@@ -161,75 +174,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-测试理论" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/07/02/测试理论/" class="article-date">
-  	<time datetime="2019-07-02T09:07:01.061Z" itemprop="datePublished">2019-07-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/02/测试理论/">
-        3.测试理论
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>单元测试</strong><br>（1） 最小的测试单位<br>（2） 依据是详细设计文档<br>（3） 以功能测试为主，重点模块结合白盒测试（检查代码）<br>（4） 一般需要编写驱动模块或桩模块<br>驱动模块：模拟被测模块上一级模块（调用被测模块的那个模块）<br>桩模块：模拟被测模块下一级模块（被被测模块所调用的那个模块）</p>
-<p><strong>集成测试</strong><br>拿到一个新的版本，首先进行冒烟测试：利用较少的人（1-3人，经验更丰富）、较少的时间（0.5—2天）对软件的主要功能进行整体的测试，决定该本版是否值得一测<br>思路：<br>（1） 冒烟测试<br>（2） 返测（对上一个版本中发现的bug进行验证，看是否解决）<br>（3） 回归测试（对上一个版本中的所有功能进行验证）<br>（4） 对增加的新功能进行测试</p>
-<p>现在很多公司没有真正的单元测试和集成测试阶段——节省成本</p>
-<p><strong>验收测试（uat：user acceptance test用户体验测试）</strong><br>（1）Alpha测试：在开发的环境中，由最终的用户（可能由开发方模拟）对产品进行测试<br>（2）beta测试：在用户实际使用环境中，由最终的用户对产品进行测试<br>公共类软件一般发布beta版（公测版）免费让用户使用，收集bug信息</p>
-<p><strong>软件测试模型</strong>：<br>1、表达软件测试过程和开发过程之间的关系<br>2、V模型<br>优点：测试阶段划分明确，既包含代码级测试（单元测试）又包括用户级测试（验收测试）<br>缺点：使人容易理解成测试只是开发以后的工作，不符合趁早测试和不断测试的原则<br>深入理解：<br>在开发过程中，测试人员需要参与文档测试，并根据相关的文档对后续的测试工作进行规划（写计划、写用例）</p>
-<p>一个程序不论哪个阶段必须要做的是黑盒测试<br>白盒测试只是对高风险的核心模块进行测试<br>白盒测试成本高、效率低，主要应用在单元测试阶段</p>
-<p>静态代码测试主要检查代码的标准和规范性<br>白盒测试主要检查代码的逻辑和结构，更关注于功能</p>
-<p>把静态测试盒白盒测试结合在一起就是——静态白盒测试</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件测试/">软件测试</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-测试用例" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-测试用例" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2019/07/02/测试用例/" class="article-date">
@@ -245,15 +190,25 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/02/测试用例/">
-        2.缺陷报告及测试用例...
-        
-      </a>
+    <h1 class="article-title" itemprop="name">
+      2.缺陷报告及测试用例...
+      
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/😫/">😫</a></li></ul>
+	</div>
+
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -319,151 +274,51 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/😫/">😫</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/07/02/测试理论/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          3.测试理论
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/07/02/软件测试/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1.软件测试</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-
-
-
-
-  
-    <article id="post-软件测试" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/07/02/软件测试/" class="article-date">
-  	<time datetime="2019-07-02T08:36:23.125Z" itemprop="datePublished">2019-07-02</time>
-</a>
+<div class="ds-share share" data-thread-key="测试用例" data-title="2.缺陷报告及测试用例..." data-url="http://yoursite.com/2019/07/02/测试用例/"  data-images="https://mommomo.github.io/20180527155946_cxzah.jpg" data-content="2.缺陷报告及测试用例...">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/02/软件测试/">
-        1.软件测试
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>什么是软件缺陷：错误、违背、软件不易使用、<br>什么是软件：程序加文档<br>裸机也包含软件，主要是BIOS 程序（基本输入/输出系统），存放在主板的一块CMOS芯片上的一段程序，在主板出厂前烧录在该芯片中：上电自检，在电脑开机后首先由bios程序控制计算机，对计算机硬件进行检查，如果所有硬件正确，把控制权交给操作系统继续引导程序，如果硬件有问题，将通过蜂鸣器发出报警声，停止开机</p>
-<p>软件分类<br>1.基本分类<br>（1）系统软件⭐<br>    操作系统、操作系统补丁程序、驱动程序（操作系统通过调用硬件的驱动程序来管理硬件设备）<br>（2）按照软件结构分类—-软件的运行是否基于网络：<br>    （1）不需要：单机软件<br>    （2）需要：分布式软件<br>       ① C/S（client/Server客户端/服务器结构）：客户端需要使用专门的软件：QQ、MSN、微信…<br>        ② B/S（browser/Server 浏览器/服务器结构）：客户端只要使用浏览器即可访问服务：网站、搜索引擎、论坛<br><img src="./images/1562056741079.png" alt="enter description here"></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件测试/">软件测试</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
+ </div>
+ 
 
 
 
 
 
-
-
-  
-    <article id="post-11" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2019/07/02/11/" class="article-date">
-  	<time datetime="2019-07-02T05:06:26.730Z" itemprop="datePublished">2019-07-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/02/11/">
-        欢迎momo呀
-        
-      </a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这是！！！</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/😫/">😫</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-      
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -487,8 +342,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
